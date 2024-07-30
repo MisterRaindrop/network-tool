@@ -11,6 +11,9 @@ Automatically collection network information.
 ### auto_tcpdump
 Automatically capture tracing information for a specified process PID via the tcpdump command.
 
+## Attation
+Before running, you need to modify the network card, host and other parameters in the script. The script is only responsible for the overall framework. The details need to be filled in by the user.
+
 ## Getting Start
 1. Distribute scripts to segments hosts
    ```
@@ -39,6 +42,7 @@ Automatically capture tracing information for a specified process PID via the tc
    ```
    ansible -i hostfile_segments  all -m shell -a "ps -elf | grep -E "tcpdump|strace" | grep -v grep"
    ```
+
 
 
    
