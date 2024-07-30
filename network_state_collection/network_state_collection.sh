@@ -15,12 +15,12 @@ if [ X"$arg" == "Xstart" ]; then
     dmesg | grep -i "rx_err" > "test_dmesg_rx_err_${timestamp}.log"
     dmesg | grep -i "tx_err" > "test_dmesg_tx_err_${timestamp}.log"
     echo "collection successful"
-fi
-
-
-if [ X"$arg" == "Xclean" ]; then
+elif [ X"$arg" == "Xclean" ]; then
     find /tmp/ -type f -name 'test_netstat_*' -exec truncate -s 0 {} +
     find /tmp/ -type f -name 'test_messages_*' -exec truncate -s 0 {} +
     find /tmp/ -type f -name 'test_dmesg_*' -exec truncate -s 0 {} +
     echo "clean all strace temp file"
+else
+    echo "Unknown argument: $arg"
+    exit 1
 fi
