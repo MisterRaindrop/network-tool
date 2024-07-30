@@ -19,7 +19,7 @@ We have collected related logs involving the network in the system.
 
 
 ## Attation
-Before running, you need to modify the network card, host and other parameters in the script. The script is only responsible for the overall framework. The details need to be filled in by the user.
+**Before running, you need to modify the network card, host and other parameters in the script. The script is only responsible for the overall framework. The details need to be filled in by the user.**
 
 ## Getting Start
 1. Distribute scripts to segments hosts
