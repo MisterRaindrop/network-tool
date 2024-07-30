@@ -56,7 +56,10 @@ We have collected related logs involving the network in the system.
    ```
    ansible -i /home/gpadmin/hostfile_segments  all -m shell -a 'ps -ef | grep -E "tcpdump|strace"'
    ```
-
+7. Ls /tmp 
+   ```
+   ansible -i /home/gpadmin/hostfile_segments  all -m shell -a 'ls -l /tmp/test*'
+   ```
 
 
    
