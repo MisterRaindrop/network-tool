@@ -5,11 +5,18 @@ We use ansible to automatically capture network logs from segments hosts through
 ### auto_strace 
 Automatically capture tracing information for a specified process PID via the strace command.
 
+### auto_tcpdump
+Automatically capture tracing information for a specified process PID via the tcpdump command.
+
 ### network_state_collection
 Automatically collection network information.
 
-### auto_tcpdump
-Automatically capture tracing information for a specified process PID via the tcpdump command.
+We have collected related logs involving the network in the system.
+1. Collect network status using `netstat`
+2. Collect `system messages logs` related to the network in the system
+3. Collect some information from the kernel buffer through `dmesg`, involving network, packet sending, packet receiving, TCP, UDP, etc.
+
+
 
 ## Attation
 Before running, you need to modify the network card, host and other parameters in the script. The script is only responsible for the overall framework. The details need to be filled in by the user.
