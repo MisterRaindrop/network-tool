@@ -9,7 +9,7 @@ Automatically capture tracing information for a specified process PID via the st
 Automatically capture tracing information for a specified process PID via the tcpdump command.
 
 ### network_state_collection
-Automatically collection network information.
+Collection network information.
 
 We have collected related logs involving the network in the system.
 1. Collect network status using `netstat`
